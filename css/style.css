@@ -1,0 +1,31 @@
+
+html{
+    
+    font-family: Heebo;
+    height: 2000px;
+    width: 1400px;
+    margin: auto;
+    font-size: 20px;
+    background-color: #fbfbfb;
+}
+
+
+.titleHeader{
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    margin-top: 100px;
+    
+    
+}
+
+.textTitle{
+    justify-content: flex-start;
+    margin: auto;
+    
+    color: #21243D;
+}
+
