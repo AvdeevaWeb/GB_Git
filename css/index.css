@@ -6,7 +6,7 @@
 html{
    
     font-family: Roboto Condensed;
-    background-image: url(/img/mainBackground.png);
+    background-image: url(../img/mainBackground.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -19,8 +19,7 @@ body{
     display: flex;
     flex-direction: column;
     min-width: 1000px;
-    height: 3000px;
-    
+    height: 800px;
     margin: auto;
 }
 
@@ -53,7 +52,7 @@ header{
     position: relative;
     width: 400px;
     height: 500px;
-    background-image: url(/img/planet.jpg);
+    background-image: url(../img/planet.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 15px;
