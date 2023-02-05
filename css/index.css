@@ -18,7 +18,7 @@ html{
 body{
     display: flex;
     flex-direction: column;
-    min-width: 1000px;
+    min-width: 500px;
     height: 800px;
     margin: auto;
 }
@@ -91,10 +91,13 @@ header{
     font-size: 12px;
     left: 70%;
     color: #acaaaa;
-    margin-top: 10px;
+    margin-top: 20px;
+    position: absolute;
+    left: 70%;
 }
 
 a {
+    
     color: #FFFFFF;
     color: inherit;
     text-decoration: none;
