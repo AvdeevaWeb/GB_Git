@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+   
+    font-family: Roboto Condensed;
+    background-image: url(/img/mainBackground.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    font-size: 18px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-width: 1000px;
+    height: 3000px;
+    
+    margin: auto;
+}
+
+header{
+    background: rgba(0, 0, 0, 0.348); 
+    backdrop-filter: blur(3px); 
+    padding: 20px;
+    margin: 40px;
+    border-radius: 15px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between ;
+    font-size: 28px;
+    font-weight: 900;
+}
+
+/*--------------------------------------------------------------------------------*/
+
+.body{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+
+
+.card{
+    position: relative;
+    width: 400px;
+    height: 500px;
+    background-image: url(/img/planet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    background-position: center center;
+    margin: 20px;
+}
+
+
+.cardBlur{
+    position: relative;
+    height: 50%;
+    width: 100%;
+    top: 50%;
+    background: rgba(0, 0, 0, 0.441); 
+    backdrop-filter: blur(5px); 
+    border-radius: 2px;
+}
+
+.text{
+    top: 50%;
+    position:absolute;
+    color: #FFFFFF;
+    z-index: 1;
+    margin:20px 20px 0 20px;
+}
+
+.titleCard{
+    margin-top: 15px;
+}
+
+.list{
+    margin:20px 20px 0 20px;
+}
+
+.sign{
+    font-size: 12px;
+    left: 70%;
+    color: #acaaaa;
+    margin-top: 10px;
+}
+
+a {
+    color: #FFFFFF;
+    color: inherit;
+    text-decoration: none;
+}
+
