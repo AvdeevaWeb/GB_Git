@@ -2,3 +2,6 @@
 ## Branch master 
 ## Branch *new_first_branch*
 Hello from new_first_branch
+## Branch *master* 
+## Branch *new_second_branch*
+Hello from new_second_branch
