@@ -1,11 +1,11 @@
 
 html{
     
-    font-family: Heebo;
+    font-family: Roboto Condensed;
     height: auto;
     max-width: 1400px;
     margin: auto;
-    background-color: #fbfbfb;
+    background-color: #ffffff;
     font-size: 22px;
     display: flex;
     flex-wrap: wrap;
@@ -21,7 +21,6 @@ html{
     justify-content: center;
     margin-top: 2%;
 }
-
 
 
 
@@ -52,7 +51,7 @@ html{
 }
 
 .myImg{
-    max-width: 80%;
+    max-width: 90%;
     
     margin:auto;
     justify-content: center;
