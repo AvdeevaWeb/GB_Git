@@ -111,12 +111,12 @@ header{
 }
 
 .sign{
+    position: relative;
     font-size: 12px;
     left: 70%;
+    bottom: 5%;
     color: #acaaaa;
-    margin-top: 20px;
-    position: absolute;
-    left: 70%;
+    
 }
 
 a {

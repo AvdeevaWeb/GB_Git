@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300italic,regular,italic,700,700italic"
         rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="css/second.css">
     <title>Git Branch</title>
 </head>
 
@@ -43,13 +44,13 @@
 
             <h3 class="title">Способы создания веток и переключения между ними</h3>
             <p class="text">Чтобы в Git добавить ветку мы используем:</p>
-            <code>$ git branch <name of new branch></code>
+            <code class="codeBlock">$ git branch <name of new branch></code>
 
             <p class="text">После данной операции ветка уже была создана, но вы по-прежнему находитесь в прежней ветке.
                 Если вы планируете переместиться на другую ветку, в том числе только что созданную, необходимо написать
                 <code class="codeText">checkout</code>
             </p>
-            <code>$ git checkout <name of branch></code>
+            <code class="codeBlock">$ git checkout <name of branch></code>
 
             <p class="text">Ветвление позволяет разделять рабочий процесс, оптимизировать тестирование и написание
                 нового кода. Однако после того, как разработчик убедился, что написанный им кусок кода готов и его можно
@@ -57,7 +58,7 @@
             <p class="text">Для этого в Git предусмотрено слияние — перенос изменений с одной ветки на другую. Однако
                 сливаемая ветка никак не меняется и остается в прежнем состоянии. Такие преобразования мы получаем,
                 применив <code class="codeText">git merge:</code></p>
-            <code>$ git merge <name of merged branch></code>
+            <code class="codeBlock">$ git merge <name of merged branch></code>
 
             <p class="text">Операция может привести к появлению конфликтов при попытке слить ветки. Это вызвано тем, что
                 изменения удаляют или переписывают информацию в существующих файлах. При попытке некорректного слияния
@@ -69,32 +70,39 @@
             <h2 class="mainTitle">Управление ветками с помощью git branch</h2>
             <p class="text">Команда <code class="codeText">git branch</code> может немного больше, чем просто в git
                 создавать ветки из текущей. Если запустить ее без параметров:</p>
-            <code>$ git branch</code>
+            
+                <code class="codeBlock">$ git branch</code>
             <p class="text">При выполнении этой строки мы получим список существующих веток, где символом * будет
                 отмечена ветка, где вы сейчас находитесь.</p>
-            <pre>
-                <code>
-                    first_branch
+            
+                <pre>
+                    <code class="code">
+                        first_branch
                     * master 
                     second_branch
-                </code>
-            </pre>
+                    </code>  
+                </pre>
+
 
             <p class="text">С помощью параметра <code class="codeText">$ git branch -v</code> можно получить последний
                 сохраненный коммит в каждой ветке.</p>
-            <pre>
-                <code>
-                    $ git branch -v 
-                        first_branch 8fa301b Fix math 
-                        * master 225cc2d Merge branch 'first_branch' 
-                        second_branch c56ee12 Refactor code style
-                </code>
-            </pre>
+            
+                <pre >
+                    <code class="code">
+                        $ git branch -v  
+                            first_branch 8fa301b Fix math 
+                            * master 225cc2d Merge branch 'first_branch' 
+                            second_branch c56ee12 Refactor code style
+                    </code>
+                    
+                </pre>
+            
+            
 
             <p class="text">В процессе разработки могут возникнуть ситуации, когда человек хочет по-другому называть уже
                 созданную ветку. Это может быть связано с разными причинами (например, разрабатываемый в данной версии
                 функционал не соответствует названию). Чтобы переименовать ветку применяем:</p>
-            <code>$ git branch -m <new name of branch></code>
+            <code class="codeBlock">$ git branch -m <new name of branch></code>
             <p class="text">Однако здесь нужно быть аккуратными, чтобы не перегрузить проект ненужными ветками. Если
                 запушить переименованную ветку, то на сервере появится ветка с новым именем, но и ветка со старым
                 названием тоже останется. Чтобы избежать такой проблемы, необходимо удалить ветку локально и на сервере.
@@ -104,7 +112,7 @@
             <p class="text">Удаление веток не такой простой процесс, как может показаться. Можно случайно удалить
                 несохраненные изменения в исходном коде, что приведет к нежелательным последствиям. Поэтому здесь нужно
                 действовать осторожно. С операцией удаления над ветками справляется команда <code class="codeText">git branch -d:</code></p>
-                <code>$ git branch -d <name of branch></code>
+                <code class="codeBlock">$ git branch -d <name of branch></code>
         </div>
     </div>
 

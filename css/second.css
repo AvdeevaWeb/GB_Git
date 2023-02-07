@@ -1,0 +1,83 @@
+
+
+html{
+    font-family: Roboto Condensed;
+    height: auto;
+    max-width: 1400px;
+    margin: auto;
+    background-color: #ffffff;
+    font-size: 22px;
+    display: flex;
+    flex-wrap: wrap;
+    color: #21243D;
+}
+
+.titleHeader{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 7%;
+}
+
+.body{
+ min-width: 400px;    
+   
+}
+
+.firstBlock{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+.secondBlock{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+.mainTitle{
+    margin: auto;
+    margin-top: 7%;
+}
+
+.text{
+    margin-top: 3%;
+
+}
+
+.title{
+    margin-top: 7%;
+    justify-content: flex-start;
+}
+
+.codeText{
+    padding: 2px;
+    border-radius: 5px;
+    background-color: rgb(211, 252, 252);
+}
+
+.codeBlock{
+    width: 70%;
+    height: 30px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 3%;
+    background-color: rgb(236, 236, 236);
+}
+
+.code{
+    
+}
+
+pre{
+    white-space: pre-line;
+    background-color: rgb(236, 236, 236);
+    padding: 20px;
+    margin: auto;
+    height: auto;
+    width: 70%;
+
+}
